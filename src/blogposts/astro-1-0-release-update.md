@@ -1,0 +1,22 @@
+---
+
+title: Astro 1.0 Release Update
+slug: astro-1-0-release-update
+excerpt: quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto
+date: 2022-09-09
+author: Jane FonDoe
+---
+
+<p>
+    quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur praesentium iste amet obcaecati, excepturi laudantium beatae error sequi necessitatibus inventore vel! Necessitatibus provident dolor enim dolorem, recusandae laborum velit optio voluptates. Itaque eaque reprehenderit recusandae harum, soluta delectus dolor maxime at unde eligendi expedita doloribus et quod inventore distinctio facere non. Hic, ratione voluptas adipisci quaerat unde natus. Eligendi, quod consectetur! Tempore in deleniti nisi et sint, ea ratione dignissimos maxime pariatur eligendi rerum deserunt repellat sunt exercitationem, magni quod rem.
+</p>
+<p>
+    Nostrum suscipit quidem, beatae cum perferendis dolorem possimus, optio magni omnis ea magnam! Et neque ea fuga cupiditate ipsam. Quae error obcaecati tenetur nihil voluptate eaque commodi sapiente consequuntur maiores natus inventore autem veniam asperiores quisquam, nam dignissimos quam libero. Odit expedita odio voluptate, quos distinctio id officia cumque. Expedita dolores id sequi accusantium neque quam, ullam omnis commodi quis, labore porro quisquam mollitia magni sint? Placeat vitae provident quam sit animi architecto! Eius ipsa error accusantium officia mollitia quia neque tempore sunt dicta aut pariatur, voluptatem aliquam expedita consequuntur repudiandae assumenda inventore illum hic?
+</p>
+<p>
+    In itaque perspiciatis amet repudiandae dicta aspernatur et nihil, quos quas quaerat iste eligendi consectetur quia commodi tempora totam illum fugiat vel deleniti explicabo inventore, tempore molestiae! Doloribus eveniet eius inventore incidunt nemo iusto id et, ipsa harum magnam sequi, placeat ut maiores quia deserunt dolorum.
+</p>
+<p>
+    Itaque voluptas molestias exercitationem, similique quam dolores fugit, reiciendis praesentium consectetur dicta rerum perferendis enim, soluta maxime sit recusandae obcaecati? Sit quibusdam cum quisquam tempora id, itaque perspiciatis fugiat consequatur impedit doloremque, deserunt ducimus voluptatem neque non quos? Cum placeat quasi voluptatibus nihil similique sunt provident, incidunt fuga laudantium error aperiam maiores commodi sapiente modi eius vitae autem quia sequi. Dolore, molestias corporis velit sequi eos possimus! Maiores nesciunt consequuntur exercitationem fuga quod, optio vitae omnis voluptas corrupti
+</p>
