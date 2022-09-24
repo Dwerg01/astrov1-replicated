@@ -1,7 +1,7 @@
 ---
-
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+import profilePic from "../images/pro_pic.png"
 
 import logos from "../images/deploy-logos.png";
 import logosSmall from "../images/deploy-logos-small.png";
@@ -10,22 +10,25 @@ import logosSmall from "../images/deploy-logos-small.png";
 <Layout title="About Astro">
     <section class="page-content">
         <div class="container">
-          <h2>About Astro</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, vel
-            quas repudiandae optio voluptatibus dolore maxime sed nisi ad, quod
-            exercitationem. Magni facilis ducimus neque nostrum voluptas, eius,
-            aliquam ullam eligendi corporis perferendis dolor iusto veniam cumque
-            saepe iste porro, non optio amet. Enim esse porro incidunt sequi
-            consectetur vitae.
-          </p>
-  
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio porro
-            sequi officia nihil optio dicta eos, cumque asperiores id harum, qui
-            quas dolorem tempore? Recusandae repudiandae magnam quae doloribus
-            impedit.
-          </p>
+          <div class="about-block">
+            
+            <div>
+              <img id="portrait" src={ profilePic} alt="Portrait of a man named, Nardu. Trying to explain who he is in as short and complete a way as simultaneously possible">
+            </div>
+            <div>
+              <h2>Who is this guy?</h2>
+              <p>
+                Lockdown urged me to consider changing things up. Since I was working from home - as were my teams, managing people became much more complicated.
+                Then I found web development and enjoyed it enough to want to do this all the time.
+              </p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio porro
+                sequi officia nihil optio dicta eos, cumque asperiores id harum, qui
+                quas dolorem tempore? Recusandae repudiandae magnam quae doloribus
+                impedit.
+              </p>
+            </div>
+          </div>
           <Card dark={true}>
 
                 <h3>Use the tools you already love</h3>
@@ -70,3 +73,28 @@ import logosSmall from "../images/deploy-logos-small.png";
         </div>
       </section>
 </Layout>
+
+<style>
+  .about-block {
+    display: flex;
+  }
+  .about-block h2 {
+  border-width: 0 0 0.5rem 0;
+  border-style: solid;
+  border-image: linear-gradient(50deg, var(--color-secondary) 10%, var(--color-tertiary) 35%, var(--color-main-bg) 50%) 1;
+  }
+  
+  .about-block img {
+    background-color: var(--color-main-bg);
+    border-width: 0.5rem;
+    border-style: solid;
+    /* border-color: transparent; */
+    /* border-image-slice: 1; */
+    border-image: linear-gradient(50deg, var(--color-secondary) 10%, var(--color-tertiary) 35%, var(--color-main-bg) 50%) 1;
+    border-radius: 0.75em;
+    max-width: 300px;
+    margin: 1em 1em 1em 0;
+
+  }
+
+</style>

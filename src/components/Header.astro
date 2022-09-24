@@ -1,5 +1,5 @@
 ---
-import logo from "../images/logo.svg";
+import logo from "../images/image2vector.svg";
 ---
 
 <header class="header">
@@ -21,7 +21,7 @@ import logo from "../images/logo.svg";
 
 <style>
     .header {
-        height: 70px;
+        height: 100px;
         background: var(--color-primary);
     }
 
@@ -34,19 +34,26 @@ import logo from "../images/logo.svg";
     }
 
     .header img {
-        height: 35px;
+        height: 75px;
         vertical-align: middle;
+        margin: 0.5em 1em;
+        font-size: 1.5em;
     }
 
     .header nav ul {
         display: flex;
     }
 
-    .header nav ul li {
-        padding: 0 10px;
+    .header nav ul li a {
+        padding: 0 30px;
+        font-size: 2em;
+        color: var(--color-main-bg);
+        z-index: 2;
+        font-weight: 500;
     }
 
-    .header nav ul li a {
-        color: #fff;
+    .logo {
+        width: 100px;
+        height: 100px;
     }
 </style>
