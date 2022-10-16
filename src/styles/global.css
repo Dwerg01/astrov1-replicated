@@ -1,11 +1,14 @@
 :root {
     --color-primary: #0f172a;
     --color-secondary: #007fff;
-    --color-tertiary: #00ff7f;
     --color-square: #ff007f;
-
     --color-main-el: #30305f;
-    --color-main-bg: #c3c3c3;
+    --color-main-bg: #f0f0f0;
+    --color-card-bg: #fcfcfc;
+
+    --font-head: 4rem;
+    --font-sub-head: 1.5rem;
+    --font-body: 1rem;
     
   }
   
@@ -16,17 +19,25 @@
     margin: 0;
     padding: 0;
   }
+
+  h1 {
+    font-size: var(--font-head)
+  }
   
+  h3, h4 {
+    font-size: var(--font-sub-head)
+
+  }
   body {
     font-family: 'Graduate', cursive;
     font-size: 16px;
     line-height: 1.5;
-    background: #f8fafc;
+    background: var(--color-main-bg);
     color: var(--color-main-el);
   }
   
   p, span {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
   a {
@@ -36,6 +47,7 @@
   
   p {
     margin: 1rem 0;
+    font-size: var(--font-body);
   }
   
   ul {
@@ -58,54 +70,17 @@
     padding: 0 30px;
   }
   
-  .btn {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    background: var(--color-main-el);
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
-  }
+
   
-  .logos-small {
-    display: none;
-  }
+
   
-  .page-content {
-    margin: 20px 0;
-  }
-  
-  .page-content h2,
-  .page-content h3 {
-    margin: 20px 0;
-  }
-  
-  .page-content h2 {
-    font-size: 40px;
-  }
-  
-  .page-content h3 {
-    font-size: 25px;
-  }
 
   @media (max-width: 960px) {
-    .logos-small {
-      display: block;
-      margin: auto;
-    }
-    .logos {
-      display: none;
-    }
+
   }
   
   @media (max-width: 500px) {
   
-    h1,
-    h2 {
-      text-align: center;
-    }
+
   
   }

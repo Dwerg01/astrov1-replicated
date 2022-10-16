@@ -1,6 +1,7 @@
 ---
 import logos from "../images/framework-logos.png";
 import logosSmall from "../images/framework-logos-small.png";
+import heroImage from "../images/pexels-andrea-piacquadio-994197.webp";
 
 export interface Props {
     heading?: string;
@@ -9,7 +10,7 @@ export interface Props {
 }
 
 const {
-    heading = "Web Dev / ecommerce freelancer",
+    heading = "Web Designer,\n Developer\n & \nEcommerce Freelancer",
     text = "Build super fast HTML-first websites using your favorite JavaScript frameworks",
     showExtra = false,
 } = Astro.props as Props;
@@ -23,8 +24,6 @@ const {
 
     {showExtra && <>
     <div class="showcase-img">
-        <img class="logos" src={logos} alt="" />
-        <img class="logos-small" src={logosSmall} alt="" />
     </div>
 
     <p class="showcase-demo">
@@ -50,7 +49,7 @@ const {
     }
 
     .showcase-text {
-        max-width: 500px;
+        max-width: 700px;
         color: #fff;
         text-align: center;
         margin: 50px auto;

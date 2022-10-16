@@ -1,9 +1,9 @@
 <svg id="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="400" viewBox="0, 0, 400,400">
   <defs>
     <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
-      <stop offset="10%" style="stop-color:rgb(0,255,127);stop-opacity:0.9" />
-      <stop offset="35%" style="stop-color:rgb(0,127,255);stop-opacity:0.9" />
-      <stop offset="50%" style="stop-color:rgb(195,195,195);stop-opacity:0.9" />
+      <!-- <stop offset="10%" style="stop-color:rgb(0,255,127);stop-opacity:0.9" /> -->
+      <stop offset="50%" style="stop-color:rgb(0,127,255);stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:rgb(32,64,255);stop-opacity:0.9" />
     </radialGradient>
   </defs>
     <g id="svgg">
