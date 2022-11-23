@@ -13,6 +13,8 @@ import logo from "../images/image2vector.svg";
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">About</a></li>
+                <li><a href="/work">Work</a></li>
+                <li><a href="/how">How</a></li>
                 <li><a href="/blog">Blog</a></li>
             </ul>
         </nav>
@@ -22,7 +24,7 @@ import logo from "../images/image2vector.svg";
 <style>
     .header {
         height: 100px;
-        background: var(--color-primary);
+        /* background: var(--color-main-bg); */
     }
 
     .header .container {
@@ -45,12 +47,18 @@ import logo from "../images/image2vector.svg";
 
     .header nav ul li a {
         padding: clamp(0.1rem, 5vw, 2rem);
-        font-size: clamp(2vw, 2rem, 5vw);
-        color: var(--color-main-bg);
+        font-size: clamp(1vw, 1.5rem, 3vw);
         z-index: 2;
-        font-weight: 500;
+        font-weight: 700;
+        background-image: var(--color-main-bg); 
+        background-size: 0% 3px;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        transition: background-size ease-in-out 300ms;
     }
-
+    .header nav ul li a:hover {
+        background-size: 100% 3px;
+    }
     .logo {
         width: 100px;
         height: 100px;

@@ -1,37 +1,49 @@
 :root {
-    --color-primary: #0f172a;
-    --color-secondary: #007fff;
+    --clr-txt-primary: #30305f;
+    --clr-bg-light: #bbbbff;
+    --clr-bg-brand: #7777ff;
     --color-square: #ff007f;
     --color-main-el: #30305f;
-    --color-main-bg: #f0f0f0;
-    --color-card-bg: #fcfcfc;
+    --color-main-bg: linear-gradient(0, var(--clr-bg-light) 5%, var(--clr-bg-brand) 35%);
+
 
     --font-head: 4rem;
     --font-sub-head: 1.5rem;
     --font-body: 1rem;
     
   }
-  
+
+  .darkmode {
+    --clr-txt-primary: #bbbbff;
+    --clr-bg-light: #30305f;
+    --clr-bg-brand: #7777ff;
+    --color-square: #ff007f;
+    --color-main-el: #30305f;
+    --color-main-bg: linear-gradient(0, var(--clr-bg-light) 5%, var(--clr-bg-brand) 35%);
+
+  }
+
   *,
   *::before,
   *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: var(--clr-txt-primary);
   }
 
   h1 {
-    font-size: var(--font-head)
+    font-size: var(--font-head);
   }
   
   h3, h4 {
-    font-size: var(--font-sub-head)
+    font-size: var(--font-sub-head);
 
   }
   body {
     font-family: 'Graduate', cursive;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1;
     background: var(--color-main-bg);
     color: var(--color-main-el);
   }
@@ -42,7 +54,6 @@
 
   a {
     text-decoration: none;
-    color: var(--color-main-el);
   }
   
   p {

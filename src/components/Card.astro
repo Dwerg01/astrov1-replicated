@@ -12,15 +12,15 @@ const { dark = false } = Astro.props as Props;
 
 <style>
     .card {
-        background: #fff;
+        background: var(--color-card-bg);
         padding: 2rem;
         border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 3px 3px 20px var(--color-card-bg);
         margin-bottom: 20px;
     }
 
     .dark {
-        background-color: var(--color-primary);
-        color: white;
+        background: var(--color-main-bg);
+
     }
 </style>
