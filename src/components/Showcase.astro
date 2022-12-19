@@ -22,20 +22,17 @@ const {
         <p> { text } </p>
     </div>
 
-    {showExtra && <>
-    <div class="showcase-img">
-        
+    <div class="contact-card card">
+
     </div>
 
-    <p class="showcase-demo">
-        <small>This is a demo website used for the YouTube crash course</small>
-    </p>
-    </>}
 </section>
 
 <style>
     .showcase {
         height: auto;
+        margin: auto;
+        width: clamp(300px, 100%, 900px);
         background-color: var(--color-secondary);
         background-image: linear-gradient(
             to bottom,
@@ -51,13 +48,12 @@ const {
     }
 
     .showcase-text {
-        max-width: 700px;
-        text-align: center;
         margin: 50px auto;
+        width: 100%;
     }
 
     .showcase h1 {
-        font-size: 50px;
+        font-size: 3rem;
         
         margin-bottom: 20px;
     }
@@ -69,6 +65,7 @@ const {
 
     .showcase-img {
         text-align: center;
+        height: 200px;;
     }
 
     .showcase-img img {
@@ -80,4 +77,10 @@ const {
         text-align: center;
         font-weight: 300;
     }
+    .contact-card {
+        background-color: green;
+        height: 20vh;
+        border-radius: 2rem;;
+    }
+
 </style>
