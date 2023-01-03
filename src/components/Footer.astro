@@ -1,27 +1,58 @@
 ---
-
 import "../styles/global.css";
 ---
 
 <footer class="footer">
     <div class="container">
         <div>
-            <h3>Astro</h3>
             <p>
-                This is a demo website to show how the Astro framework works.
-                Visit the <a href="https://astro.build">official website</a> to learn
+                This site was built using Astro 
+                Visit the <a href="https://astro.build" target="_blank">official website</a> to learn
                 more.
             </p>
-        </div>
+        </div>        
         <div class="link-block">
             <ul>
                 <li><a class="hover-link" href="/">Home</a></li>
                 <li><a class="hover-link" href="/about">About</a></li>
+                <li><a class="hover-link" href="/blog">Projects</a></li>
                 <li><a class="hover-link" href="/blog">Blog</a></li>
             </ul>
         </div>
+
+    </div>
+    <div class="copywrite">
+        <p>Nardu Malherbe All Rights Reserved</p>
+        <p class="year">&copy; 2023</p>
     </div>
 </footer>
+
+<script type="text/javascript" src="https://popupsmart.com/freechat.js"
+></script>
+<script>
+    window.start.init({
+        title: "Get in Touch",
+        message:
+            "Feel free to ask a question or share your ideas. I will respond soonest.",
+        color: "#000000",
+        position: "left",
+        placeholder: "Leave your message",
+        withText: "Use",
+        viaWhatsapp: "Or write us directly via Whatsapp",
+        gty: "Go to your",
+        awu: "and write us",
+        connect: "Connect now",
+        button: "Get in touch",
+        device: "everywhere",
+        logo: "https://d2r80wdbkwti6l.cloudfront.net/kwv7k3wFzmZvfe8vF9iarxVGHm09kOwU.jpg",
+        person: "https://d2r80wdbkwti6l.cloudfront.net/G9rcj53IcdNZ4Y3SPz7wgdjDNZROAVmw.jpg",
+        services: [
+            { name: "whatsapp", content: "+27844622869" },
+            { name: "mail", content: "hello@nardu.info" },
+        ],
+    });
+</script>
+
 
 <style>
     .footer {
@@ -39,10 +70,9 @@ import "../styles/global.css";
     }
 
     .footer a {
-        padding: 0.5rem ;
+        padding: 0.5rem;
         z-index: 2;
     }
-
 
     .footer h3 {
         margin-bottom: 10px;

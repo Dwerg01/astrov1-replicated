@@ -5,13 +5,15 @@ import heroImage from "../images/pexels-andrea-piacquadio-994197.webp";
 
 export interface Props {
     heading?: string;
+    subheader?: string;
     text?: string;
     showExtra?: boolean;
 }
 
 const {
     heading = "Web Designer,\n Developer\n & \nEcommerce Freelancer",
-    text = "I like working on Shopify stores and getting store owners the results they are after",
+    subheader = "I help Shopify store owners make the most of their online business",
+    text = "Let's work together to get your ideas implemented in your store",
     showExtra = false,
 } = Astro.props as Props;
 ---
@@ -19,6 +21,7 @@ const {
 <section class="showcase">
     <div class="showcase-text">
         <h1>{ heading }</h1>
+        <h2> {subheader} </h2>
         <p> { text } </p>
     </div>
 
