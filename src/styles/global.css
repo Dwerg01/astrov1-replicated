@@ -1,4 +1,7 @@
 :root {
+
+    font-size: 16px;
+
     --clr-txt-primary: #30305f;
     --clr-bg-light: #bbbbff;
     --clr-bg-brand: #7777ff;
@@ -42,7 +45,6 @@
   }
   body {
     font-family: 'Graduate', cursive;
-    font-size: 16px;
     line-height: 1;
     background: var(--color-main-bg);
     color: var(--color-main-el);
