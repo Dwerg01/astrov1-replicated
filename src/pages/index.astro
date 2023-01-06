@@ -4,13 +4,14 @@ import Showcase from "../components/Showcase.astro";
 import Features from "../components/Features.astro";
 import Tabs from "../components/Tabs.astro";
 import Footer from "../components/Footer.astro";
+import Button from "../components/Button.astro";
 ---
 
 <Layout>
 <Showcase showExtra={true} />
 <Features />
 <section class="page-content">
-	<div class="container">
+	<div class="container flex justify-items-center">
 	  <h2>Get Started With Astro</h2>
 	  <p>
 		Get a new Astro project up and running locally with our helpful
@@ -28,6 +29,7 @@ import Footer from "../components/Footer.astro";
 		laborum impedit nesciunt ut voluptatum assumenda aspernatur libero
 		iusto error molestias dolorum, necessitatibus labore?
 	  </p>
+	  <Button />
 	</div>
   </section>
 </Layout>

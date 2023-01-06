@@ -3,6 +3,7 @@ import logos from "../images/framework-logos.png";
 import logosSmall from "../images/framework-logos-small.png";
 import heroImage from "../images/pexels-andrea-piacquadio-994197.webp";
 
+
 export interface Props {
     heading?: string;
     text?: string;
@@ -16,8 +17,8 @@ const {
 } = Astro.props as Props;
 ---
 
-<section class="showcase">
-    <div class="showcase-text">
+<section class="showcase ">
+    <div class="showcase-text flex">
         <h1>{ heading }</h1>
         <p> { text } </p>
     </div>
@@ -26,58 +27,13 @@ const {
     <div class="showcase-img">
     </div>
 
-    <p class="showcase-demo">
+    <p class="showcase-demo text-right text-sm">
         <small>This is a demo website used for the YouTube crash course</small>
     </p>
     </>}
 </section>
 
 <style>
-    .showcase {
-        height: auto;
-        background-color: var(--color-secondary);
-        background-image: linear-gradient(
-            to bottom,
-            var(--color-primary),
-            var(--color-secondary)
-        );
-        padding: 30px;
-    }
 
-    .showcase-blog {
-        min-height: 300px;
-    }
 
-    .showcase-text {
-        max-width: 700px;
-        color: #fff;
-        text-align: center;
-        margin: 50px auto;
-    }
-
-    .showcase h1 {
-        font-size: 50px;
-        color: #fff;
-        margin-bottom: 20px;
-    }
-
-    .showcase p {
-        font-size: 24px;
-        margin-bottom: 20px;
-    }
-
-    .showcase-img {
-        text-align: center;
-    }
-
-    .showcase-img img {
-        border-radius: 10px;
-        margin: auto;
-    }
-
-    .showcase-demo {
-        color: #fff;
-        text-align: center;
-        font-weight: 300;
-    }
 </style>
