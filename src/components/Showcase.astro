@@ -1,7 +1,7 @@
 ---
-import logos from "../images/framework-logos.png";
-import logosSmall from "../images/framework-logos-small.png";
-import heroImage from "../images/pexels-andrea-piacquadio-994197.webp";
+
+import profileimage from "../images/pro_pic.png";
+import "./src/styles/index.css";
 
 
 export interface Props {
@@ -11,27 +11,54 @@ export interface Props {
 }
 
 const {
-    heading = "Web Designer,\n Developer\n & \nEcommerce Freelancer",
-    text = "Build super fast HTML-first websites using your favorite JavaScript frameworks",
+    heading = "Get your ",
+    text = "I am Nardu. I like working on Web Dev projects for clients, to make their value visible online",
     showExtra = false,
 } = Astro.props as Props;
+
 ---
 
 <section class="showcase ">
-    <div class="showcase-text flex">
-        <h1>{ heading }</h1>
-        <p> { text } </p>
+    <div class="grid grid-cols-2 gap-2">
+        
+        <div class="justify-center">
+            <img class="m-auto w-2/4" src={ profileimage } alt="portrait image of Nardu" />
+        </div>
+        <div class="w-2/4 to-blue-500">
+            <h1>{ heading }</h1>
+            <h2 id="word-ticker" class="text-lg animate-pulse"></h2>
+            <p> { text } </p>
+        </div>
     </div>
 
     {showExtra && <>
     <div class="showcase-img">
+        <p class="showcase-demo text-right text-sm">
+            <small>This is a demo website used for the YouTube crash course</small>
+        </p>
     </div>
 
-    <p class="showcase-demo text-right text-sm">
-        <small>This is a demo website used for the YouTube crash course</small>
-    </p>
     </>}
 </section>
+
+<script>
+
+    const catchPhrases = document.getElementById("word-ticker");
+
+    const flashwords = ["jou ma", "my ma", "Rose", "Piet Wielietjies"]
+    const delay = 4000
+    
+    setInterval(() => {
+        flashwords.forEach((el, i) => {
+            setTimeout(() => {
+                catchPhrases.textContent = el;
+                
+            }, i * delay);
+        })
+    }, flashwords.length * delay);
+
+
+</script>
 
 <style>
 
