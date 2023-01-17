@@ -2,15 +2,15 @@
 import logo from "../images/image2vector.svg";
 ---
 
-<header class="header">
-    <div class="container">
+<header class="header m-auto">
+    <div class="container flex items-center w-full justify-between">
         <div class="logo">
             <a href="/">
                 <img src={logo} alt="" />
             </a>
         </div>
         <nav>
-            <ul>
+            <ul class="flex gap-3 font-mono text-lg">
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">About</a></li>
                 <li><a href="/blog">Blog</a></li>
@@ -20,36 +20,7 @@ import logo from "../images/image2vector.svg";
 </header>
 
 <style>
-    .header {
-        height: 100px;
-        background: var(--color-primary);
-    }
-
-    .header .container {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 20px;
-    }
-
-    .header img {
-        height: 75px;
-        vertical-align: middle;
-        margin: 15px 5vw;
-    }
-
-    .header nav ul {
-        display: flex;
-    }
-
-    .header nav ul li a {
-        padding: clamp(0.1rem, 5vw, 2rem);
-        font-size: clamp(2vw, 2rem, 5vw);
-        color: var(--color-main-bg);
-        z-index: 2;
-        font-weight: 500;
-    }
+    
 
     .logo {
         width: 100px;
