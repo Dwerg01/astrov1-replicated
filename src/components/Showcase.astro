@@ -1,6 +1,6 @@
 ---
 
-import profileimage from "../images/pro_pic.png";
+
 import "./src/styles/index.css";
 
 
@@ -18,15 +18,13 @@ const {
 
 ---
 
-<section class="showcase ">
+<section class="showcase outline outline-1 h-full">
     <div class="grid grid-cols-2 gap-2">
         
-        <div class="justify-center">
-            <img class="m-auto w-2/4" src={ profileimage } alt="portrait image of Nardu" />
-        </div>
+
         <div class="w-2/4 to-blue-500">
-            <h1>{ heading }</h1>
-            <h2 id="word-ticker" class="text-lg animate-pulse"></h2>
+            <h1 class="text-4xl">{ heading }</h1>
+            <h2 id="word-ticker" class="text-2xl animate-pulse"></h2>
             <p> { text } </p>
         </div>
     </div>
@@ -46,7 +44,7 @@ const {
     const catchPhrases = document.getElementById("word-ticker");
 
     const flashwords = ["jou ma", "my ma", "Rose", "Piet Wielietjies"]
-    const delay = 4000
+    const delay = 1000
     
     setInterval(() => {
         flashwords.forEach((el, i) => {

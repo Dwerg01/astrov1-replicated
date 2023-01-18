@@ -10,5 +10,15 @@ class="py-2 px-4 bg-purple-500 text-white font-semibold rounded-lg shadow-md hov
 </button>
 
 <script>
-
+	import confetti from 'canvas-confetti';
+	window.addEventListener('mousemove', (event) => {
+		const mouseX = event.pageX;
+		const mouseY = event.pageY;
+		// Do something with these coordinates
+		console.log(mouseX, mouseY)
+	});
+	const button = document.body.querySelector('button');
+	if (button) {
+		button.addEventListener('click', () => confetti());
+	}
 </script>
